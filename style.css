@@ -8,4 +8,5 @@
     background-color: aqua;
     border: 1px;
     border-color: blue;
+    flex-wrap: wrap;
 }
