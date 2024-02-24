@@ -1,8 +1,10 @@
+const body = document.querySelector('body');
 const container = document.createElement('div');
-container.className = 'container';
+//container.className = 'container';
 body.appendChild(container);
+container.style.color = red;
 
-const div1 = document.createElement('div');
+/* const div1 = document.createElement('div');
 div1.className = 'grid-item';
 container.appendChild(div1);
 
@@ -65,3 +67,4 @@ container.appendChild(div15);
 const div16 = document.createElement('div');
 div1.className = 'grid-item';
 container.appendChild(div16);
+ */
