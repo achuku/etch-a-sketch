@@ -2,7 +2,7 @@ const body = document.querySelector('body');
 const container = document.createElement('div');
 //container.className = 'container';
 body.appendChild(container);
-container.style.color = red;
+container.style.color = 'red';
 
 /* const div1 = document.createElement('div');
 div1.className = 'grid-item';
