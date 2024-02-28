@@ -1,6 +1,6 @@
 const body = document.querySelector('body');
 const container = document.createElement('div');
-//container.className = 'container';
+container.className = 'container';
 body.appendChild(container);
 container.style.color = 'red';
 
