@@ -5,29 +5,29 @@ body.appendChild(container);
 container.style.backgroundColor = 'gray';
 
 const div1 = document.createElement('div');
-div1.className = 'grid-item first-item';
+div1.className = 'grid-item';
 container.appendChild(div1);
 div1.style.backgroundColor = 'blue';
 
 const div2 = document.createElement('div');
-div1.className = 'grid-item';
+div2.className = 'grid-item';
 container.appendChild(div2);
 div2.style.backgroundColor = 'yellow';
 
 const div3 = document.createElement('div');
-div1.className = 'grid-item';
+div3.className = 'grid-item';
 container.appendChild(div3);
 div3.style.backgroundColor = 'green';
  
 const div4 = document.createElement('div');
-div1.className = 'grid-item';
+div4.className = 'grid-item';
 container.appendChild(div4);
 div4.style.backgroundColor = 'orange';
 
 const div5 = document.createElement('div');
-div1.className = 'grid-item last-item';
+div5.className = 'grid-item';
 container.appendChild(div5);
-div5.style.color = 'black';
+div5.style.backgroundColor = 'black';
 
 /*
 const div6 = document.createElement('div');
