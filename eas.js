@@ -4,10 +4,11 @@ container.className = 'container';
 body.appendChild(container);
 container.style.color = 'red';
 
-/* const div1 = document.createElement('div');
+const div1 = document.createElement('div');
 div1.className = 'grid-item';
 container.appendChild(div1);
-
+div1.style.color = 'blue';
+/* 
 const div2 = document.createElement('div');
 div1.className = 'grid-item';
 container.appendChild(div2);
