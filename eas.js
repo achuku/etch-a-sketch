@@ -85,4 +85,7 @@ const div16 = document.createElement('div');
 div16.className = 'grid-item';
 container.appendChild(div16);
 div16.style.backgroundColor = 'navy';
+
+//Change bg color for hover
+
  
