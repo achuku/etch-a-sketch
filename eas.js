@@ -1,15 +1,41 @@
 //Create body structure - a container div holding 16 divs (grid items)
 const body = document.querySelector('body');
 const container = document.createElement('div');
-container.className = 'container';
-body.appendChild(container);
-container.style.backgroundColor = 'gray';
+body.appendChild(container).className = 'container';
+body.style.backgroundColor = 'gray';
 
-const div1 = document.createElement('div');
-div1.className = 'grid-item';
-container.appendChild(div1);
-div1.style.backgroundColor = 'blue';
+/*
+function createGridItems(rows, columns) {
+    container.style.setProperty('-grid-rows', rows);
+    container.style.setProperty('-grid-columns', columns);
+    for ( c = 0; c <= (rows * columns); c++ ){
+        let item = document.createElement('div');
+        container.appendChild(item).className = 'grid-item';
+        item.addEventListener ('mouseover', function bgChange(){
+            item.style.backgroundColor = 'black';
+        });
+    };
+};
+makeRows(16,16);
+*/
+    function createGridItems(rows, columns){
+        container.style.setProperty ('grid-rows', rows);
+        container.style.setProperty ('crid-columns', columns)
+        for (i = 0; i <= (rows * columns); i++) {
+            let item = document.createElement('div');
+            container.appendChild(item).className = 'grid-item';
+        };
+    };
+    createGridItems(16,16);
+        
+// const div1 = document.createElement('div');
+// div1.className = 'grid-item';
+// container.appendChild(div1);
+//div1.style.backgroundColor = 'blue';
 
+
+
+/*
 const div2 = document.createElement('div');
 div2.className = 'grid-item';
 container.appendChild(div2);
@@ -84,8 +110,6 @@ div15.style.backgroundColor = 'moccasin';
 const div16 = document.createElement('div');
 div16.className = 'grid-item';
 container.appendChild(div16);
-div16.style.backgroundColor = 'navy';
+div16.style.backgroundColor = 'navy'; 
 
-//Change bg color for hover
-
- 
+*/
