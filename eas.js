@@ -20,7 +20,7 @@ makeRows(16,16);
 */
     function createGridItems(rows, columns){
         container.style.setProperty ('grid-rows', rows);
-        container.style.setProperty ('crid-columns', columns)
+        container.style.setProperty ('grid-columns', columns)
         for (i = 0; i <= (rows * columns); i++) {
             let item = document.createElement('div');
             container.appendChild(item).className = 'grid-item';
