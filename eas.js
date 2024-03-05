@@ -4,27 +4,15 @@ const container = document.createElement('div');
 body.appendChild(container).className = 'container';
 body.style.backgroundColor = 'gray';
 
-/*
-function createGridItems(rows, columns) {
-    container.style.setProperty('-grid-rows', rows);
-    container.style.setProperty('-grid-columns', columns);
-    for ( c = 0; c <= (rows * columns); c++ ){
-        let item = document.createElement('div');
-        container.appendChild(item).className = 'grid-item';
-        item.addEventListener ('mouseover', function bgChange(){
-            item.style.backgroundColor = 'black';
-        });
-    };
-};
-makeRows(16,16);
-*/
+
     function createGridItems(rows, columns){
         //container.style.setProperty ('grid-rows', rows);
         //container.style.setProperty ('grid-columns', columns);
-        for (i = 0; i <= (rows * columns); i++) {
+        for (i = 0; i < (rows * columns); i++) {
             let item = document.createElement('div');
             container.appendChild(item).className = 'grid-item';
             item.addEventListener ('mouseover',function bgChange(){
+                
                 item.style.backgroundColor = 'white'; 
             });
         };
