@@ -8,6 +8,10 @@ const btn = document.createElement('button');
 container.appendChild(btn).className = 'button';
 btn.textContent = 'Change Number Of Squares';
 
+btn.addEventListener ( 'click', () => {
+    prompt('How many squares per side?', '');
+});
+
 
 function createGridItems(rows, columns){
     //container.style.setProperty ('grid-rows', rows);
