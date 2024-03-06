@@ -9,7 +9,14 @@ container.appendChild(btn).className = 'button';
 btn.textContent = 'Change Number Of Squares';
 
 btn.addEventListener ( 'click', () => {
-    prompt('How many squares per side?', '');
+    size = prompt('How many squares per side? (1 - 100).', '');
+    if (0 < size && size <=100){
+        createGridItems(size, size);
+    }else {
+        createGridItems(16,16);
+        alert('Please enter a value between 1 and 100.');
+    }
+    
 });
 
 
