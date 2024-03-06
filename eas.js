@@ -1,4 +1,3 @@
-//Create body structure - a container div holding 16 divs (grid items)
 const body = document.querySelector('body');
 const container = document.createElement('div');
 body.appendChild(container).className = 'container';
