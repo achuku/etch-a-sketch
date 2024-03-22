@@ -22,6 +22,7 @@ createGridItems(16,16);
 const btn = document.getElementById('button');
 btn.addEventListener ( 'click', () => {
     size = prompt('How many squares per side? (1 - 100).', '');
+    container.innerHTML = "";
     if (0 < size && size <=100){
         createGridItems(size, size);
     }else {
