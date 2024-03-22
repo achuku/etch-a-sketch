@@ -1,20 +1,47 @@
-
-h1 {
-    text-align: center;
+*{
+    box-sizing: border-box;
 }
+
+:root{
+    --grid-cols:1;
+    --grid-rows:1;
+}
+
+body{
+    background: gray;
+}
+
 
 .container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.grid-container{
+    display: grid;
+    width: 400px;
+    height: 400px;
+    grid-template-rows: repeat(var(--grid-rows),1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);  
+    background: white;
+    border: 1px solid black;
+}
+
 .grid-item{
     border: 1px solid black;
-    width: 25px;
-    height: 25px;
+    text-align: center;
+}
+
+#button{
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border-style:solid;
+    cursor: pointer;
 }
 
 

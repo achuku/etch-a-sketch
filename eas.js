@@ -1,12 +1,25 @@
-const body = document.querySelector('body');
-const container = document.createElement('div');
-body.appendChild(container).className = 'container';
-body.style.backgroundColor = 'gray';
+const container = document.getElementById('grid-container');
 
-const btn = document.createElement('button');
-container.appendChild(btn).className = 'button';
-btn.textContent = 'Change Number Of Squares';
+function random(number) {
+    return Math.floor(Math.random() * number + 1);
+}
 
+function createGridItems(rows, columns){
+    container.style.setProperty ('--grid-rows', rows);
+    container.style.setProperty ('--grid-cols', columns);
+    for (i = 0; i < (rows * columns); i++) {
+        let item = document.createElement('div');
+        container.appendChild(item).className = 'grid-item';
+        item.addEventListener ('mouseover',function bgChange(){
+            
+            const rndCol = "rgb(" + random(255) + "," + random(255) + "," + random(255) + ")";
+            item.style.backgroundColor = rndCol;
+        });
+    };
+};
+createGridItems(16,16);
+
+const btn = document.getElementById('button');
 btn.addEventListener ( 'click', () => {
     size = prompt('How many squares per side? (1 - 100).', '');
     if (0 < size && size <=100){
@@ -19,17 +32,5 @@ btn.addEventListener ( 'click', () => {
 });
 
 
-function createGridItems(rows, columns){
-    //container.style.setProperty ('grid-rows', rows);
-    //container.style.setProperty ('grid-columns', columns);
-    for (i = 0; i < (rows * columns); i++) {
-        let item = document.createElement('div');
-        container.appendChild(item).className = 'grid-item';
-        item.addEventListener ('mouseover',function bgChange(){
-            
-            item.style.backgroundColor = 'white'; 
-        });
-    };
-};
-createGridItems(16,16);
+
  
